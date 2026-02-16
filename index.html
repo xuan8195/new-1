@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendo Pharmacy - 24/7 Automated Pharmacy Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/custom-enhanced.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-blue': '#0066CC',
-                        'primary-teal': '#00A896',
-                        'accent-coral': '#FF6B6B',
-                        'dark-navy': '#1A365D',
-                        'light-blue': '#E6F4FF',
-                        'soft-mint': '#E8F8F5',
-                        'warm-white': '#FAFBFC',
-                        'deep-teal': '#028174',
                         'primary-red': '#D94A5C',
                         'hover-red': '#C63D4D',
                         'teal': '#5CBDB9',
@@ -28,10 +20,6 @@
                         'text-secondary': '#6B7280',
                         'text-muted': '#9CA3AF',
                         'border-gray': '#E5E7EB',
-                    },
-                    fontFamily: {
-                        'display': ['Outfit', 'sans-serif'],
-                        'body': ['DM Sans', 'sans-serif'],
                     }
                 }
             }
@@ -58,7 +46,7 @@
                     <!-- Introduction Dropdown -->
                     <div class="dropdown relative">
                         <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
-                            Introduction
+                            About Us
                             <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                             </svg>
@@ -66,45 +54,45 @@
                         <div class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
                             <a href="pages/introduction.html" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Overview</a>
                             <a href="pages/introduction.html#partnerships" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Our Partnership</a>
+                            <a href="pages/introduction.html#growth" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Growth Plan</a>
                         </div>
                     </div>
                     
                     <!-- Business Model Dropdown -->
                     <div class="dropdown relative">
                         <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
-                            Business Model
+                            Services
                             <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                             </svg>
                         </button>
                         <div class="dropdown-menu hidden absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2">
                             <a href="pages/business-model.html#overview" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Overview</a>
-                            <a href="pages/business-model.html#value-proposition" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Value Proposition</a>
+                            <a href="pages/business-model.html#value-proposition" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Our Promise to you</a>
                             <a href="pages/business-model.html#strategies" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Strategies & Operation</a>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Plan Dropdown -->
+                    <div class="dropdown relative">
+                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
+                            Price & Promotion
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+                            <a href="pages/marketing.html#price" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Price</a>
+                            <a href="pages/marketing.html#promotion" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Promotion</a>
                         </div>
                     </div>
                     
                     <a href="pages/swot.html" class="text-text-secondary hover:text-teal">SWOT Analysis</a>
                     <a href="pages/pirate-funnel.html" class="text-text-secondary hover:text-teal">Pirate Funnel</a>
                     
-                    <!-- Marketing Plan Dropdown -->
-                    <div class="dropdown relative">
-                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
-                            Marketing Plan
-                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                        </button>
-                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                            <a href="pages/marketing.html#products" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Products</a>
-                            <a href="pages/marketing.html#price" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Price</a>
-                            <a href="pages/marketing.html#promotion" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Promotion</a>
-                            <a href="pages/marketing.html#places" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Places</a>
-                        </div>
-                    </div>
+                    
                     
                     <a href="pages/testimonials.html" class="text-text-secondary hover:text-teal">Testimonials</a>
-                    <a href="pages/growth.html" class="text-text-secondary hover:text-teal">Growth Plan</a>
                     
                     <!-- Reflection Dropdown -->
                     <div class="dropdown relative">
@@ -149,7 +137,6 @@
                 <a href="pages/pirate-funnel.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Pirate Funnel</a>
                 <a href="pages/marketing.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Marketing Plan</a>
                 <a href="pages/testimonials.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Testimonials</a>
-                <a href="pages/growth.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Growth Plan</a>
                 <a href="pages/reflection.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Reflection</a>
                 <a href="pages/vending-machine.html" class="block px-3 py-2 bg-primary-red text-white hover:bg-hover-red rounded mx-3 text-center font-medium">Products</a>
             </div>
@@ -271,155 +258,6 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS SECTION -->
-<!-- Add this section to your index.html -->
-
-<section id="how-it-works" class="section-padding bg-white">
-    <div class="container-wide">
-        <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="badge mb-4">Simple & Convenient</span>
-            <h2 class="font-display text-dark-navy mb-6">How It Works</h2>
-            <p class="text-xl text-text-secondary">
-                Purchasing and accessing medication from Vendo Pharmacy is easy. Simply locate a machine, verify your identity, get expert guidance, and collect your medication — all in just a few steps.
-            </p>
-        </div>
-
-        <!-- Steps Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <!-- Step 1 -->
-            <div class="how-it-works-step animate-on-scroll">
-                <div class="flex flex-col items-center text-center">
-                    <div class="step-number mb-6">
-                        1
-                    </div>
-                    <div class="mb-6">
-                        <div class="w-full h-48 bg-gradient-to-br from-light-blue to-soft-mint rounded-xl flex items-center justify-center mb-4">
-                            <svg class="w-24 h-24 text-primary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="font-display text-xl text-dark-navy mb-3">Locate & Browse</h3>
-                    <p class="text-text-secondary">
-                        Find a nearby vending machine using our app or website. Browse available products and select what you need.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="how-it-works-step animate-on-scroll animate-delay-1">
-                <div class="flex flex-col items-center text-center">
-                    <div class="step-number mb-6">
-                        2
-                    </div>
-                    <div class="mb-6">
-                        <div class="w-full h-48 bg-gradient-to-br from-soft-mint to-light-blue rounded-xl flex items-center justify-center mb-4">
-                            <svg class="w-24 h-24 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="font-display text-xl text-dark-navy mb-3">Get Guidance (Verify)</h3>
-                    <p class="text-text-secondary">
-                        Secure verification using SingPass for identity confirmation. Connect with licensed pharmacists via video call for consultation.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="how-it-works-step animate-on-scroll animate-delay-2">
-                <div class="flex flex-col items-center text-center">
-                    <div class="step-number mb-6">
-                        3
-                    </div>
-                    <div class="mb-6">
-                        <div class="w-full h-48 bg-gradient-to-br from-light-blue to-soft-mint rounded-xl flex items-center justify-center mb-4">
-                            <svg class="w-24 h-24 text-primary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="font-display text-xl text-dark-navy mb-3">Pharmacist Review</h3>
-                    <p class="text-text-secondary">
-                        Our pharmacists will review and approve your purchase, ensuring medication safety and appropriateness for your needs.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="how-it-works-step animate-on-scroll animate-delay-3">
-                <div class="flex flex-col items-center text-center">
-                    <div class="step-number mb-6">
-                        4
-                    </div>
-                    <div class="mb-6">
-                        <div class="w-full h-48 bg-gradient-to-br from-soft-mint to-light-blue rounded-xl flex items-center justify-center mb-4">
-                            <svg class="w-24 h-24 text-accent-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="font-display text-xl text-dark-navy mb-3">Pay & Collect</h3>
-                    <p class="text-text-secondary">
-                        Complete payment and collect your medication instantly. Receive instructions and support available 24/7 if needed.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Visual Flow Diagram -->
-        <div class="bg-gradient-to-r from-soft-mint to-light-blue rounded-3xl p-12">
-            <div class="max-w-4xl mx-auto">
-                <div class="relative">
-                    <!-- Connection Line -->
-                    <div class="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary-teal via-primary-blue to-accent-coral opacity-30 transform -translate-y-1/2 hidden lg:block"></div>
-                    
-                    <div class="grid lg:grid-cols-4 gap-8 relative z-10">
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <span class="text-3xl">📱</span>
-                            </div>
-                            <p class="text-sm font-semibold text-dark-navy">Find Machine</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <span class="text-3xl">👤</span>
-                            </div>
-                            <p class="text-sm font-semibold text-dark-navy">Verify Identity</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <span class="text-3xl">💬</span>
-                            </div>
-                            <p class="text-sm font-semibold text-dark-navy">Consult Pharmacist</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <span class="text-3xl">✅</span>
-                            </div>
-                            <p class="text-sm font-semibold text-dark-navy">Get Medication</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="text-center mt-12">
-            <a href="pages/vending-machine.html" class="btn-primary">
-                Try It Now
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-
     <!-- Mission & Vision -->
     <section class="py-16 bg-white">
         <div class="w-full px-4 sm:px-6 lg:px-8">
@@ -463,9 +301,9 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-text-primary mb-4">Vision</h3>
-                    <p class="text-text-secondary leading-relaxed">
+                    <h3 class="text-2xl text-text-primary mb-4">
                         To provide safe medicines, on demand at your convenience
-                    </p>
+                    </h3>
                 </div>
 
                 
@@ -560,12 +398,81 @@
                 <div class="bg-gradient-to-br from-primary-red to-hover-red rounded-xl p-6 shadow-md card-hover text-white">
                     <h3 class="text-xl font-bold mb-3">Explore More</h3>
                     <p class="mb-4 opacity-90">
-                        Learn about our complete business model and value proposition
+                        Learn about our complete Services
                     </p>
                     <a href="pages/business-model.html" class="inline-block bg-white text-primary-red px-4 py-2 rounded-lg font-medium hover:bg-gray-100">
                         View Details
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Places Section -->
+    <section id="places" class="py-16 bg-white">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">Where to Find Us?</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Strategic placement in high-traffic and high-need locations for maximum accessibility and convenience
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-bg-main rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-teal rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Shopping Malls</h3>
+                    <p class="text-text-secondary mb-4">
+                        Located in retail zones, providing convenient access for shoppers and families
+                    </p>
+                    <div class="flex items-center text-sm text-teal font-medium">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Retail foot traffic
+                    </div>
+                </div>
+
+                <div class="bg-bg-main rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-teal rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">MRT Stations</h3>
+                    <p class="text-text-secondary mb-4">
+                        Positioned in major transport hubs near gantries and waiting areas, capturing commuters during peak and off-peak hours
+                    </p>
+                    <div class="flex items-center text-sm text-teal font-medium">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        High commuter volume
+                    </div>
+                </div>
+
+                <div class="bg-bg-main rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-teal rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Residential Estates</h3>
+                    <p class="text-text-secondary mb-4">
+                        Installed in HDB void decks and community centers, serving elderly residents and caregivers in mature estates
+                    </p>
+                    <div class="flex items-center text-sm text-teal font-medium">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Community accessibility
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -808,7 +715,7 @@
         </button>
         
         <!-- Chat Window -->
-        <div id="chat-widget" class="hidden absolute bottom-16 left-0 bg-white rounded-xl shadow-2xl w-96 overflow-hidden">
+        <div id="chat-widget" class="hidden absolute bottom-16 left-0 bg-white rounded-xl shadow-2xl w-80 overflow-hidden">
             <div class="bg-teal text-white p-4 flex justify-between items-center">
                 <div class="flex items-center">
                     <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-2">
@@ -824,7 +731,7 @@
                     </svg>
                 </button>
             </div>
-            <div id="chat-messages" class="h-96 overflow-y-auto p-4 bg-gray-50 custom-scrollbar">
+            <div id="chat-messages" class="h-64 overflow-y-auto p-4 bg-gray-50 custom-scrollbar">
                 <!-- Messages will be added here -->
             </div>
             <div class="p-4 border-t">
@@ -832,10 +739,10 @@
                     <input 
                         id="chat-input" 
                         type="text" 
-                        placeholder="Ask me anything about Vendo Pharmacy..." 
-                        class="flex-1 px-4 py-3 text-base border border-border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-teal"
+                        placeholder="Type your question..." 
+                        class="flex-1 px-3 py-2 border border-border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-teal"
                     />
-                    <button id="chat-send" class="bg-teal hover:bg-teal/90 text-white px-5 py-3 rounded-lg text-base font-medium">
+                    <button id="chat-send" class="bg-teal hover:bg-teal/90 text-white px-4 py-2 rounded-lg">
                         Send
                     </button>
                 </div>
