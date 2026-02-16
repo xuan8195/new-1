@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine - Vendo Pharmacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/custom-enhanced.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#0066CC',
+                        'primary-teal': '#00A896',
+                        'accent-coral': '#FF6B6B',
+                        'dark-navy': '#1A365D',
+                        'light-blue': '#E6F4FF',
+                        'soft-mint': '#E8F8F5',
+                        'warm-white': '#FAFBFC',
+                        'deep-teal': '#028174',
+                        'primary-red': '#D94A5C',
+                        'hover-red': '#C63D4D',
+                        'teal': '#5CBDB9',
+                        'bg-main': '#EBF6F5',
+                        'bg-highlight': '#FBE3E8',
+                        'text-primary': '#1F2937',
+                        'text-secondary': '#6B7280',
+                        'text-muted': '#9CA3AF',
+                        'border-gray': '#E5E7EB',
+                    },
+                    fontFamily: {
+                        'display': ['Outfit', 'sans-serif'],
+                        'body': ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg-main text-text-primary">
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../logo.png" alt="Vendo Pharmacy Logo" class="w-10 h-10 object-contain">
+                        <span class="ml-2 text-xl font-bold text-text-primary">Vendo Pharmacy</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-text-secondary hover:text-teal">Home</a>
+                    
+                    <!-- Introduction Dropdown -->
+                    <div class="dropdown relative">
+                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
+                            Introduction
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+                            <a href="introduction.html" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Overview</a>
+                            <a href="introduction.html#partnerships" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Our Partnership</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Model Dropdown -->
+                    <div class="dropdown relative">
+                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
+                            Business Model
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2">
+                            <a href="business-model.html#overview" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Overview</a>
+                            <a href="business-model.html#value-proposition" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Value Proposition</a>
+                            <a href="business-model.html#strategies" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Strategies & Operation</a>
+                        </div>
+                    </div>
+                    
+                    <a href="swot.html" class="text-text-secondary hover:text-teal">SWOT Analysis</a>
+                    <a href="pirate-funnel.html" class="text-text-secondary hover:text-teal">Pirate Funnel</a>
+                    
+                    <!-- Marketing Plan Dropdown -->
+                    <div class="dropdown relative">
+                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
+                            Marketing Plan
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
+                            <a href="marketing.html#products" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Products</a>
+                            <a href="marketing.html#price" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Price</a>
+                            <a href="marketing.html#promotion" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Promotion</a>
+                            <a href="marketing.html#places" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Places</a>
+                        </div>
+                    </div>
+                    
+                    <a href="testimonials.html" class="text-text-secondary hover:text-teal">Testimonials</a>
+                    <a href="growth.html" class="text-text-secondary hover:text-teal">Growth Plan</a>
+                    
+                    <!-- Reflection Dropdown -->
+                    <div class="dropdown relative">
+                        <button class="dropdown-button text-text-secondary hover:text-teal font-medium flex items-center">
+                            Reflection
+                            <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
+                            <a href="reflection.html#yuhao" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Yuhao</a>
+                            <a href="reflection.html#collin" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Collin</a>
+                            <a href="reflection.html#olivia" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Olivia</a>
+                            <a href="reflection.html#michelle" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">Michelle</a>
+                            <a href="reflection.html#references" class="block px-4 py-2 text-text-secondary hover:bg-bg-main hover:text-teal">References</a>
+                        </div>
+                    </div>
+                    
+                    <a href="pages/vending-machine.html" class="bg-primary-red text-white px-4 py-2 rounded-lg hover:bg-hover-red font-medium ml-4">
+                        Products
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-teal">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Home</a>
+                <a href="introduction.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Introduction</a>
+                <a href="business-model.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Business Model</a>
+                <a href="swot.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">SWOT Analysis</a>
+                <a href="pirate-funnel.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Pirate Funnel</a>
+                <a href="marketing.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Marketing Plan</a>
+                <a href="testimonials.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Testimonials</a>
+                <a href="growth.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Growth Plan</a>
+                <a href="reflection.html" class="block px-3 py-2 text-text-secondary hover:bg-bg-main">Reflection</a>
+                <a href="vending-machine.html" class="block px-3 py-2 bg-primary-red text-white hover:bg-hover-red rounded mx-3 text-center font-medium">🛒 Try Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-teal via-teal/90 to-primary-red/20 py-16 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        </div>
+        
+        <div class="w-full px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                    Our products
+                </h1>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">
+                    Fair, competitive pricing — benchmarked against local pharmacies
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 bg-gradient-to-b from-white to-bg-main">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-10 space-y-4 md:space-y-0">
+                <div>
+                    <h2 class="text-4xl font-bold text-text-primary mb-2">Available Medications</h2>
+                    <p class="text-text-secondary">Browse our selection of general sale and pharmacy medications</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterCategory('all')" class="filter-btn active px-5 py-2.5 rounded-lg bg-gradient-to-r from-teal to-teal/90 text-white shadow-md hover:shadow-lg transition-all duration-300">All Products</button>
+                    <button onclick="filterCategory('gsl')" class="filter-btn px-5 py-2.5 rounded-lg bg-white border-2 border-gray-200 text-text-secondary hover:border-teal hover:text-teal transition-all duration-300">GSL</button>
+                    <button onclick="filterCategory('p')" class="filter-btn px-5 py-2.5 rounded-lg bg-white border-2 border-gray-200 text-text-secondary hover:border-blue-500 hover:text-blue-500 transition-all duration-300">Pharmacy Only</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6" id="products-grid">
+                <!-- GSL Products -->
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="gsl">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400" alt="Paracetamol 500mg" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">GSL</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Paracetamol 500mg</h3>
+                    <p class="text-text-muted text-sm mb-3">Pain & fever relief - 20 tablets</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$5.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="gsl">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400" alt="Lozenges" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">GSL</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Lozenges</h3>
+                    <p class="text-text-muted text-sm mb-3">Sore throat relief - 24 lozenges</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$8.50</span>
+                    </div>
+                </div>
+
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="gsl">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400" alt="Bandages" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">GSL</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Bandages</h3>
+                    <p class="text-text-muted text-sm mb-3">Adhesive bandages - 50 pack</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$6.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="gsl">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400" alt="Digital Thermometer" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">GSL</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Digital Thermometer</h3>
+                    <p class="text-text-muted text-sm mb-3">Fast & accurate reading</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$12.90</span>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="gsl">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400" alt="Glyprin Dispersible Tablet" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-semibold">GSL</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Glyprin Dispersible Tablet</h3>
+                    <p class="text-text-muted text-sm mb-3">30 per pack</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$7.00</span>
+                    </div>
+                </div>
+
+                <!-- Pharmacy-Only Products -->
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="p">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400" alt="Antihistamine" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-semibold">Pharmacy</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Antihistamine</h3>
+                    <p class="text-text-muted text-sm mb-3">Allergy relief - 30 tablets</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$15.90</span>
+                    </div>
+                </div>
+
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="p">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400" alt="Anti-Nausea" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-semibold">Pharmacy</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Anti-Nausea</h3>
+                    <p class="text-text-muted text-sm mb-3">Motion sickness - 10 tablets</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$18.50</span>
+                    </div>
+                </div>
+
+                
+
+                <div class="product-card bg-bg-main rounded-xl p-5 shadow-md card-hover" data-category="p">
+                    <div class="bg-white rounded-lg p-4 mb-3 flex items-center justify-center h-32 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400" alt="Cough Syrup" class="w-full h-full object-cover rounded">
+                    </div>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-semibold">Pharmacy</span>
+                    <h3 class="text-lg font-bold text-text-primary mt-2 mb-1">Cough Syrup</h3>
+                    <p class="text-text-muted text-sm mb-3">Relief for dry cough - 100ml</p>
+                    <div class="flex justify-center items-center pt-2">
+                        <span class="text-xl font-bold text-primary-red">$12.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-8 mt-12">
+        <div class="w-full px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">
+                Browse our available medications. Visit our machine locations to purchase.
+            </p>
+            <div class="mt-4">
+                <a href="../index.html" class="text-teal hover:text-teal/80">← Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        function filterCategory(category) {
+            const products = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-gradient-to-r', 'from-teal', 'to-teal/90', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'border-2', 'border-gray-200', 'text-text-secondary');
+            });
+            
+            event.target.classList.remove('bg-white', 'border-2', 'border-gray-200', 'text-text-secondary');
+            event.target.classList.add('active', 'bg-gradient-to-r', 'from-teal', 'to-teal/90', 'text-white', 'shadow-md');
+            
+            products.forEach(product => {
+                if (category === 'all' || product.dataset.category === category) {
+                    product.style.display = 'block';
+                    product.style.animation = 'fadeIn 0.3s ease-in';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
